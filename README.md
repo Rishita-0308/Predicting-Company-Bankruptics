@@ -1,4 +1,5 @@
 Project Overview: Predicting Company Bankruptcies
+
 📌 Objective:
 The goal of this project is to develop machine learning models that can predict the likelihood of a company going bankrupt based on financial indicators, operational metrics, and risk factors. This enables early warning systems for investors, banks, and regulatory bodies to minimize financial risks.
 
