@@ -1,121 +1,47 @@
-📄 Bankruptcy Prediction Project
-🚀 Project Overview
-This project aims to build a machine learning model capable of predicting the likelihood of company bankruptcy based on financial indicators. By leveraging historical financial data, the model supports proactive risk management, informed decision-making, and portfolio optimization.
+Project Overview: Predicting Company Bankruptcies
+📌 Objective:
+The goal of this project is to develop machine learning models that can predict the likelihood of a company going bankrupt based on financial indicators, operational metrics, and risk factors. This enables early warning systems for investors, banks, and regulatory bodies to minimize financial risks.
 
-🎯 Objectives
-Predict company bankruptcy using financial ratios and metrics.
+🔍 Problem Statement:
+Company bankruptcies can lead to significant financial losses for stakeholders. Early prediction of bankruptcy allows companies, lenders, and investors to make informed decisions, restructure operations, or avoid high-risk investments.
 
-Identify key financial indicators most strongly associated with bankruptcy risk.
+📊 Dataset Overview:
+The dataset typically contains financial and operational attributes such as:
 
-Compare different machine learning models to find the best-performing algorithm.
+Financial Ratios (e.g., debt ratio, working capital, retained earnings)
 
-Develop a robust ensemble model for enhanced prediction accuracy.
+Profitability Metrics (e.g., net profit margin, operating margin)
 
-Create clear and informative visualizations for data insights and model results.
+Liquidity Ratios (e.g., current ratio, quick ratio)
 
-📊 Dataset
-Source: [Internal/Provided dataset — Bankruptcies.csv]
-
-Records: 6,819 companies
-
-Features: 95 financial indicators + 1 target variable (Bankrupt?)
+Operational Efficiency (e.g., asset turnover, sales growth)
 
 Target Variable:
 
-1: Bankrupt
+0 → Company is not bankrupt
 
-0: Not Bankrupt
+1 → Company is bankrupt
 
-Feature Types: Mostly continuous numerical features (float64), some binary/integer features.
+🔬 Key Areas of Analysis:
+1️⃣ Financial health indicators that highly correlate with bankruptcy.
+2️⃣ Liquidity and debt analysis to assess the company’s ability to meet obligations.
+3️⃣ Profitability trends over time as a warning sign of financial distress.
+4️⃣ Operational efficiency measures predicting long-term sustainability.
 
-🔍 Project Workflow
-Data Exploration (EDA):
+🛠 Methodology:
+✅ Exploratory Data Analysis (EDA): Understand patterns, distributions, and key financial warning signs.
+✅ Feature Engineering: Scale numerical features, handle class imbalance using techniques like SMOTE.
+✅ Model Selection: Train and compare Logistic Regression, Decision Tree, Random Forest, and XGBoost models.
+✅ Hyperparameter Tuning: Optimize model parameters using GridSearchCV.
+✅ Model Evaluation: Use metrics like Accuracy, Precision, Recall, F1-Score, ROC-AUC Curve, with special focus on Recall (important to minimize false negatives).
 
-Analyze feature distributions and detect patterns.
+🎯 Project Impact:
+🚀 Risk Mitigation – Enable investors and banks to spot potential bankruptcies early.
+📊 Better Decision-Making – Help companies take preventive measures before financial collapse.
+🎯 Financial Stability – Support more resilient financial markets by reducing exposure to high-risk entities.
 
-Visualize relationships using correlation heatmaps, boxplots, and distribution plots.
+📝 Conclusion:
+This project uses machine learning to build an early warning system for predicting company bankruptcies. The insights help in risk assessment, investment strategy, and corporate governance, strengthening financial resilience in markets.
 
-Feature Selection:
-
-Correlation analysis to select relevant financial indicators.
-
-Removal of redundant or highly correlated features if necessary.
-
-Data Preprocessing:
-
-Address class imbalance using techniques like undersampling or SMOTE.
-
-Standardize/normalize features for model compatibility.
-
-Model Building:
-
-Train multiple classifiers (Logistic Regression, Decision Tree, Random Forest, etc.).
-
-Compare performance across models.
-
-Ensemble Modeling:
-
-Develop a Voting Classifier using top-performing models for better overall accuracy.
-
-Hyperparameter Tuning:
-
-Use Grid Search or Random Search for optimal model parameters.
-
-Performance Evaluation:
-
-Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC, Confusion Matrix.
-
-Visualize results using classification reports and ROC curves.
-
-Insights & Recommendations:
-
-Discuss top predictive features and practical implications.
-
-Highlight risks and considerations for real-world use.
-
-🛠️ Tools and Libraries
-Python 3.x
-
-Pandas — data manipulation
-
-NumPy — numerical computation
-
-Matplotlib & Seaborn — visualization
-
-Scikit-learn — machine learning algorithms and evaluation
-
-Imbalanced-learn — handling class imbalance
-
-❓ Key Questions Addressed
-Which financial indicators are the strongest predictors of bankruptcy?
-
-Which machine learning model provides the best prediction accuracy?
-
-What are the potential risks and limitations of applying the model in real-world scenarios?
-
-📈 Project Benefits
-Improved financial risk assessment.
-
-Informed lending, investment, and portfolio management decisions.
-
-Early warning system for identifying financially distressed companies.
-
-⚠️ Limitations and Risks
-Data quality issues (if any) may affect model accuracy.
-
-Economic changes or external market conditions are not accounted for.
-
-Model may require periodic retraining to remain effective.
-
-📎 Deliverables
-Fully documented machine learning model.
-
-Data exploration and feature analysis visualizations.
-
-Comparative analysis of multiple models.
-
-Ensemble model with hyperparameter tuning.
-
-Final report with actionable insights.
-
-👩‍💻 Created by: Rishita Shah 📅 Project Date: 2025
+👩‍💻 Created by: Rishita Shah 
+📅 Project Date: 2025
